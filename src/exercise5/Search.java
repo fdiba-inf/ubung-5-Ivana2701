@@ -21,6 +21,16 @@ public class Search {
 
         int numberIndex = -1;
         // Search for number in numbers
+        
+        int index = 0;
+        do {
+            if (number == numbers[index]) {
+                numberIndex = index;
+                break;
+            }
+
+            index++;
+        } while (index < numbers.length);
 
         System.out.println("Number index: " + numberIndex);
     }
