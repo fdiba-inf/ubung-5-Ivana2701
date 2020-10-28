@@ -11,14 +11,14 @@ public class UniqueNumbers {
         int numberCount = input.nextInt();
 
         int[] numbers = new int[numberCount];
-        int[] uniqueNumbers = new int[numbers.length];
+        int[] uniqueNumbers = new int[numberCount];
 
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
         
         
-        int[] uniqueNumbers = new int[numbers.length];
+      
 
         // Find unique numbers in numbers
         for(int j = 0; j < uniqueNumbers.length; j++){
@@ -32,7 +32,7 @@ public class UniqueNumbers {
          }
         }
 
-        String uniqueNumbersAsString = Arrays.toString(uniqueNumbers);
-        System.out.println("Unique numbers: " + uniqueNumbersAsString);
+        String uniqueNumsAsString = Arrays.toString(uniqueNumbers);
+        System.out.println("Unique numbers: " + uniqueNumsAsString);
     }
 }
