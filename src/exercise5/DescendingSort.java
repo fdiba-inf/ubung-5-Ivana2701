@@ -20,9 +20,9 @@ public class DescendingSort {
         // Sort numbers in descending order
 
            Arrays.sort(numbers);
-          
-              for (int i = 0; i <numbers.length; i++){
-                reversed[i] = newArrayt[numbers.length-1-i];
+          int[] reversed = new int[numberCount];
+              for (int i = numbers.length-1; i >=0; i--){
+                reversed[i] = Array[numbers.length-1-i];
               }
               
     String reversedAsString = Arrays.toString(reversed);

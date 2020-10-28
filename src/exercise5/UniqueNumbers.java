@@ -11,13 +11,15 @@ public class UniqueNumbers {
         int numberCount = input.nextInt();
 
         int[] numbers = new int[numberCount];
+        int[] uniqueNumbers = new int[numbers.length];
 
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
         
-
+        
         int[] uniqueNumbers = new int[numbers.length];
+
         // Find unique numbers in numbers
         for(int j = 0; j < uniqueNumbers.length; j++){
           if(uniqueNumbers[j] == 0){
