@@ -22,14 +22,13 @@ public class DescendingSort {
            Arrays.sort(numbers);
           int[] reversed = new int[numberCount];
               for (int i = numbers.length-1; i >=0; i--){
-                reversed[i] = Array[numbers.length-1-i];
+                reversed[numbers.length-i-1] = numbers[i];
               }
               
     String reversedAsString = Arrays.toString(reversed);
-    System.out.println("Reversed symbols: " + reversedAsString);
+    System.out.println("Sorted numbers: " + reversedAsString);
         
 
-        String numbersAsString = Arrays.toString(numbers);
-        System.out.println("Sorted numbers: " + numbersAsString);
+       
     }
 }
