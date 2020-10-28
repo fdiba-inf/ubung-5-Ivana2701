@@ -19,6 +19,16 @@ public class DescendingSort {
 
         // Sort numbers in descending order
 
+           Arrays.sort(numbers);
+          
+              for (int i = 0; i <numbers.length; i++){
+                reversed[i] = newArrayt[numbers.length-1-i];
+              }
+              
+    String reversedAsString = Arrays.toString(reversed);
+    System.out.println("Reversed symbols: " + reversedAsString);
+        
+
         String numbersAsString = Arrays.toString(numbers);
         System.out.println("Sorted numbers: " + numbersAsString);
     }
